@@ -30,7 +30,7 @@ class ActionResource(resources.MongoEngineResource):
         new_action = None
         action_name = action_type[0].action_name #exception
 
-        import pdb; pdb.set_trace()
+        # import pdb; pdb.set_trace()
         if action_name in deal_action_list:
             new_action = DealAction(
                 url = bundle.data['url'],

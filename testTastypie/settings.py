@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 """
 Django settings for testTastypie project.
 
@@ -108,3 +109,4 @@ STATIC_URL = '/static/'
 
 from mongoengine import connect
 connect('jamja', port=27027, username='jamja', password='11jamja11')
+#connect('analytics')

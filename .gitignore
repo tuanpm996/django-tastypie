@@ -1,2 +1,4 @@
 *.pyc
+/include
 /lib
+/local
