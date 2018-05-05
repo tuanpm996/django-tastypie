@@ -14,7 +14,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
@@ -25,7 +25,7 @@ SECRET_KEY = 'at6b2(&**b5rgito@$vh^pz8o6gyx57e!i)xr2ic6e99s)0a8a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['52.90.223.160','172.31.4.31']
 
 
 # Application definition
@@ -107,4 +107,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 from mongoengine import connect
-connect('analytics')
+connect('jamja', port=27027, username='jamja', password='11jamja11')
